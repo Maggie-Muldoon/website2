@@ -101,6 +101,79 @@ footer {
 }
 .btn-ghost:hover { background: #E07A6F; color: white; }
 
+/* ── Artwork Carousel ── */
+.artwork-carousel-wrap {
+  overflow: hidden;
+  border-radius: 1.25rem;
+}
+.artwork-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+.artwork-slide {
+  min-width: 100%;
+  max-height: 540px;
+  overflow: hidden;
+  border-radius: 1.25rem;
+}
+.artwork-slide img {
+  width: 100%;
+  height: 100%;
+  max-height: 540px;
+  object-fit: contain;
+  background: #f5ede4;
+  display: block;
+}
+.artwork-arrow {
+  position: absolute;
+  top: 50%; transform: translateY(-50%);
+  width: 2.75rem; height: 2.75rem;
+  border-radius: 9999px;
+  background: rgba(255,255,255,0.88);
+  border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.14);
+  transition: background 0.2s, box-shadow 0.2s;
+  z-index: 10;
+}
+.artwork-arrow:hover { background: white; box-shadow: 0 4px 20px rgba(0,0,0,0.18); }
+.artwork-arrow-left  { left:  0.75rem; }
+.artwork-arrow-right { right: 0.75rem; }
+.artwork-dot {
+  width: 0.55rem; height: 0.55rem;
+  border-radius: 9999px;
+  background: #d1bfb0;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.artwork-dot.active {
+  background: #E07A6F;
+  transform: scale(1.3);
+}
+
+/* Big website CTA */
+.btn-website-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #E07A6F;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 1.1rem 2.5rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  box-shadow: 0 8px 32px rgba(224, 122, 111, 0.35);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+  letter-spacing: 0.01em;
+}
+.btn-website-cta:hover {
+  background: #C9615A;
+  box-shadow: 0 12px 40px rgba(201, 97, 90, 0.4);
+  transform: translateY(-2px);
+}
+
 /* Icon badge */
 .icon-badge {
   width: 3.5rem; height: 3.5rem; border-radius: 9999px;

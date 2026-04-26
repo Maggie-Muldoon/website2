@@ -1,3 +1,49 @@
+// Artwork carousel
+(function () {
+  var track  = document.getElementById('artwork-track');
+  var dotsEl = document.getElementById('artwork-dots');
+  var prev   = document.getElementById('artwork-prev');
+  var next   = document.getElementById('artwork-next');
+  if (!track) return;
+
+  var slides = track.querySelectorAll('.artwork-slide');
+  var total  = slides.length;
+  var current = 0;
+  var timer;
+
+  // Build dots
+  slides.forEach(function (_, i) {
+    var d = document.createElement('button');
+    d.className = 'artwork-dot' + (i === 0 ? ' active' : '');
+    d.setAttribute('aria-label', 'Slide ' + (i + 1));
+    d.addEventListener('click', function () { goTo(i); });
+    dotsEl.appendChild(d);
+  });
+
+  function updateDots() {
+    dotsEl.querySelectorAll('.artwork-dot').forEach(function (d, i) {
+      d.classList.toggle('active', i === current);
+    });
+  }
+
+  function goTo(n) {
+    current = (n + total) % total;
+    track.style.transform = 'translateX(-' + (current * 100) + '%)';
+    updateDots();
+    resetTimer();
+  }
+
+  function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(function () { goTo(current + 1); }, 4500);
+  }
+
+  prev.addEventListener('click', function () { goTo(current - 1); });
+  next.addEventListener('click', function () { goTo(current + 1); });
+
+  resetTimer();
+})();
+
 // Portfolio mobile slider
 (function () {
   var items = [
