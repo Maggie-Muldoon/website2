@@ -83,20 +83,20 @@ footer {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 .btn-primary {
-  background: #a67c52; color: white; border-radius: 9999px;
+  background: #E07A6F; color: white; border-radius: 9999px;
 }
-.btn-primary:hover { background: #8b6642; }
+.btn-primary:hover { background: #C9615A; }
 .btn-outline {
-  background: transparent; color: #a67c52;
-  border: 1px solid #a67c52; border-radius: 9999px;
+  background: transparent; color: #E07A6F;
+  border: 1px solid #E07A6F; border-radius: 9999px;
 }
-.btn-outline:hover { background: #f0e6d8; }
+.btn-outline:hover { background: #fdf0ee; }
 .btn-ghost {
-  background: transparent; border: 1px solid #a67c52;
-  color: #a67c52; border-radius: 9999px;
+  background: transparent; border: 1px solid #E07A6F;
+  color: #E07A6F; border-radius: 9999px;
   width: 3rem; height: 3rem; padding: 0;
 }
-.btn-ghost:hover { background: #a67c52; color: white; }
+.btn-ghost:hover { background: #E07A6F; color: white; }
 
 /* Icon badge */
 .icon-badge {
