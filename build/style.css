@@ -45,8 +45,6 @@ html { scroll-behavior: smooth; }
   opacity: 1; transform: translateY(0);
 }
 
-/* Mobile portfolio slider */
-#portfolio-slide { transition: opacity 0.4s ease; }
 
 /* Dot pattern background */
 .dot-bg {
