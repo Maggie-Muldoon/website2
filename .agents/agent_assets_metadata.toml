@@ -1,0 +1,32 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "APdsQDeNUmX6RgUzYsVXL"
+uri = "file://artifacts/mockup-sandbox/public/images/live-art-hero.png"
+type = "image"
+title = "live artist painting at event"
+
+[[generated]]
+id = "thBe8xAQuuf7p6AP59ZfE"
+uri = "file://artifacts/mockup-sandbox/public/images/portfolio-1.png"
+type = "image"
+title = "oil painting bride and groom"
+
+[[generated]]
+id = "0gQ4H0GS7kWdDmDMkPSea"
+uri = "file://artifacts/mockup-sandbox/public/images/portfolio-2.png"
+type = "image"
+title = "landscape oil painting rolling hills"
+
+[[generated]]
+id = "c8B2gwCuQtFUYOdQC9mdM"
+uri = "file://artifacts/mockup-sandbox/public/images/portfolio-3.png"
+type = "image"
+title = "live portrait painting smiling guest"
+
+[[generated]]
+id = "DlXMBhEwIodc-0QbqEaEj"
+uri = "file://artifacts/mockup-sandbox/public/images/face-painting.png"
+type = "image"
+title = "child face painting butterfly candid"
