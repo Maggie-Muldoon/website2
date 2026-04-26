@@ -6,6 +6,10 @@ module.exports = function (eleventyConfig) {
     strict_filters: true,
   });
 
+  eleventyConfig.setServerOptions({
+    host: "0.0.0.0",
+  });
+
   eleventyConfig.addPlugin(handlebarsPlugin);
   eleventyConfig.addPassthroughCopy("build/*.js");
 
