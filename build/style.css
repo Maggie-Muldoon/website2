@@ -8,6 +8,9 @@ html { scroll-behavior: smooth; }
 .hero-shape {
   border-radius: 100px 0 100px 0;
 }
+.hero-shadow {
+  box-shadow: 0 20px 60px rgba(224, 122, 111, 0.4);
+}
 
 /* Portfolio gallery */
 .portfolio-image-container {
