@@ -1,9 +1,238 @@
 ---
 layout: layout.hbs
-title: "PAGE TITLE"
-tags:
+title: "Clara Woods — Live Event Artist"
 ---
 
-<h1>Header</h1>
+<!-- ── HEADER ─────────────────────────────────────────────── -->
+<header class="sticky top-0 z-50 bg-cream/80 border-b border-sand/50">
+  <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+    <div class="font-serif text-2xl font-bold tracking-tight text-espresso">
+      Clara Woods
+    </div>
+    <nav class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest text-taupe">
+      <a href="#portfolio" class="hover:text-copper transition-colors">Portfolio</a>
+      <a href="#services"  class="hover:text-copper transition-colors">Services</a>
+      <a href="#contact"   class="hover:text-copper transition-colors">Contact</a>
+    </nav>
+    <a href="#contact"
+       class="btn btn-primary hidden md:inline-flex px-8 py-3 text-sm">
+      Book Now
+    </a>
+  </div>
+</header>
 
-<p>Maggie 2</p>
+<!-- ── HERO ───────────────────────────────────────────────── -->
+<section class="relative px-6 pt-16 pb-24 md:pt-32 md:pb-40 overflow-hidden bg-cream">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+    <!-- Text -->
+    <div class="max-w-xl">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-linen text-bronze text-xs font-semibold uppercase tracking-widest mb-6">
+        <i data-lucide="paintbrush" class="w-3 h-3"></i>
+        Live Event Artist
+      </div>
+      <h1 class="font-serif text-5xl md:text-7xl font-bold leading-tight mb-6 text-espresso">
+        Capturing your most
+        beautiful moments,
+        <em class="text-copper font-light not-italic">live.</em>
+      </h1>
+      <p class="text-lg md:text-xl text-taupe mb-10 leading-relaxed">
+        I bring weddings, corporate events, and private parties to life through live painting.
+        Watch your memories become timeless art right before your eyes.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#contact" class="btn btn-primary px-8 py-4 text-base">
+          Inquire for your date
+        </a>
+        <a href="#portfolio" class="btn btn-outline px-8 py-4 text-base">
+          View Portfolio
+        </a>
+      </div>
+    </div>
+
+    <!-- Image -->
+    <div class="relative">
+      <div class="absolute inset-0 bg-sand hero-shape transform translate-x-4 translate-y-4"></div>
+      <img src="/images/live-art-hero.png"
+           alt="Live artist painting at an event with guests watching"
+           class="relative z-10 w-full object-cover hero-shape shadow-xl"
+           style="aspect-ratio:4/5; max-height:580px;">
+    </div>
+  </div>
+</section>
+
+<!-- ── PORTFOLIO ──────────────────────────────────────────── -->
+<section id="portfolio" class="py-24 px-6 bg-white">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="font-serif text-4xl md:text-5xl font-bold text-espresso mb-4">Fine Art Portfolio</h2>
+      <p class="text-taupe max-w-2xl mx-auto text-lg">A curated selection of live paintings and studio commissions.</p>
+    </div>
+
+    <!-- Mobile slider -->
+    <div class="md:hidden">
+      <div id="portfolio-slide" class="portfolio-image-container">
+        <img id="portfolio-slide-img"
+             src="/images/portfolio-1.png"
+             alt="The First Dance"
+             class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
+          <div class="text-white">
+            <h3 id="portfolio-slide-title" class="font-serif text-xl font-semibold">The First Dance</h3>
+            <p id="portfolio-slide-sub" class="text-sm text-white/80">Oil on Canvas, 24×36"</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center gap-6 mt-6">
+        <button id="portfolio-prev" class="btn-ghost" aria-label="Previous">
+          <i data-lucide="chevron-left" class="w-5 h-5"></i>
+        </button>
+        <span id="portfolio-slide-count" class="text-sm text-taupe">1 / 3</span>
+        <button id="portfolio-next" class="btn-ghost" aria-label="Next">
+          <i data-lucide="chevron-right" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Desktop grid -->
+    <div class="hidden md:grid md:grid-cols-3 gap-6">
+      <div class="portfolio-image-container">
+        <img src="/images/portfolio-1.png" alt="Bride and Groom">
+        <div class="portfolio-overlay"></div>
+        <div class="portfolio-caption">
+          <h3 class="font-serif text-xl font-semibold">The First Dance</h3>
+          <p class="text-sm text-white/80">Oil on Canvas, 24×36"</p>
+        </div>
+      </div>
+      <div class="portfolio-image-container">
+        <img src="/images/portfolio-2.png" alt="Tuscany Sunset">
+        <div class="portfolio-overlay"></div>
+        <div class="portfolio-caption">
+          <h3 class="font-serif text-xl font-semibold">Tuscany Sunset</h3>
+          <p class="text-sm text-white/80">Live Landscape, 18×24"</p>
+        </div>
+      </div>
+      <div class="portfolio-image-container">
+        <img src="/images/portfolio-3.png" alt="Evening Guests">
+        <div class="portfolio-overlay"></div>
+        <div class="portfolio-caption">
+          <h3 class="font-serif text-xl font-semibold">Evening Guests</h3>
+          <p class="text-sm text-white/80">Watercolor Portrait</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES ───────────────────────────────────────────── -->
+<section id="services" class="py-24 px-6 relative dot-bg">
+  <div class="absolute inset-0 opacity-40 pointer-events-none dot-bg"></div>
+  <div class="max-w-6xl mx-auto relative z-10">
+    <div class="text-center mb-16">
+      <h2 class="font-serif text-4xl md:text-5xl font-bold text-espresso mb-4">Live Art Services</h2>
+      <p class="text-taupe max-w-2xl mx-auto text-lg">Unique entertainment that leaves you with a masterpiece.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- Weddings -->
+      <div class="service-card p-8">
+        <div class="icon-badge mb-6">
+          <i data-lucide="palette" class="w-7 h-7 text-copper"></i>
+        </div>
+        <h3 class="font-serif text-xl font-bold mb-3 text-espresso">Live Weddings</h3>
+        <p class="text-taupe text-sm leading-relaxed">
+          A bespoke oil painting of your ceremony or reception, created live as guests mingle and celebrate.
+        </p>
+      </div>
+
+      <!-- Guest Portraits -->
+      <div class="service-card p-8">
+        <div class="icon-badge mb-6">
+          <i data-lucide="camera" class="w-7 h-7 text-copper"></i>
+        </div>
+        <h3 class="font-serif text-xl font-bold mb-3 text-espresso">Guest Portraits</h3>
+        <p class="text-taupe text-sm leading-relaxed">
+          Quick, elegant watercolor or sketch portraits for your guests to take home as one-of-a-kind favors.
+        </p>
+      </div>
+
+      <!-- Landscape Painting -->
+      <div class="service-card p-8">
+        <div class="icon-badge mb-6">
+          <i data-lucide="mountain" class="w-7 h-7 text-copper"></i>
+        </div>
+        <h3 class="font-serif text-xl font-bold mb-3 text-espresso">Landscape Painting</h3>
+        <p class="text-taupe text-sm leading-relaxed">
+          Capturing the beauty of your venue or destination setting in a rich, impressionist plein air style.
+        </p>
+      </div>
+
+      <!-- Face Painting -->
+      <div class="service-card overflow-hidden p-0 flex flex-col">
+        <div class="h-40 overflow-hidden">
+          <img src="/images/face-painting.png"
+               alt="Child getting face painted as a butterfly"
+               class="w-full h-full object-cover">
+        </div>
+        <div class="p-6 flex-1">
+          <h3 class="font-serif text-xl font-bold mb-3 text-espresso">Face Painting</h3>
+          <p class="text-taupe text-sm leading-relaxed">
+            High-end, intricate face and body art for children's parties or themed adult events.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER / CTA ───────────────────────────────────────── -->
+<footer id="contact" class="bg-espresso text-cream py-24 px-6 mt-12">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="font-serif text-4xl md:text-6xl font-bold mb-8 leading-tight">
+      Ready to make your event unforgettable?
+    </h2>
+    <p class="text-sand text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
+      My calendar fills up quickly for wedding season. Reach out to secure your date and discuss your vision.
+    </p>
+
+    <div class="bg-white/5 rounded-2xl p-8 md:p-12 border border-white/10 mb-16">
+      <div class="grid md:grid-cols-2 gap-8 text-left">
+        <div>
+          <h3 class="text-sm font-semibold uppercase tracking-widest text-copper mb-6">Contact Info</h3>
+          <div class="space-y-4 text-cream/90">
+            <a href="mailto:hello@clarawoodsart.com"
+               class="flex items-center gap-3 hover:text-copper transition-colors">
+              <i data-lucide="mail" class="w-5 h-5 text-copper flex-shrink-0"></i>
+              hello@clarawoodsart.com
+            </a>
+            <div class="flex items-center gap-3">
+              <i data-lucide="map-pin" class="w-5 h-5 text-copper flex-shrink-0"></i>
+              Based in Charleston, SC &mdash; available to travel worldwide.
+            </div>
+            <a href="#" class="flex items-center gap-3 hover:text-copper transition-colors">
+              <i data-lucide="at-sign" class="w-5 h-5 text-copper flex-shrink-0"></i>
+              @clarawoods_liveart
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center">
+          <a href="mailto:hello@clarawoodsart.com"
+             class="btn btn-primary w-full py-5 text-lg rounded-full">
+            Book Me for Your Event
+            <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10 pt-8 text-sm text-white/40 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div>&copy; 2026 Clara Woods Art. All rights reserved.</div>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-copper transition-colors">Terms</a>
+        <a href="#" class="hover:text-copper transition-colors">Privacy</a>
+      </div>
+    </div>
+  </div>
+</footer>

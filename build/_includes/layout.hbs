@@ -3,14 +3,43 @@
 
 <head>
   {{> head }}
-  <link rel="stylesheet" href="../../style.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          },
+          colors: {
+            cream:   '#faf8f5',
+            linen:   '#f0e6d8',
+            sand:    '#e6d5c3',
+            copper:  '#a67c52',
+            bronze:  '#8b6642',
+            bark:    '#3d3632',
+            espresso:'#2b2623',
+            taupe:   '#5c544d',
+          },
+        }
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" media="print" onload="this.media='all'"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+
+  <link rel="stylesheet" href="/style.css">
 </head>
 
-<body>
-  <div id="main">
-    {{{ content }}}
-  </div>
-  <script src="script.js"></script>
+<body class="bg-cream text-bark antialiased">
+  {{{ content }}}
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="/script.js"></script>
+  <script>lucide.createIcons();</script>
 </body>
 
 </html>
