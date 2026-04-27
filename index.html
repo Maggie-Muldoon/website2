@@ -30,7 +30,7 @@
       theme: {
         extend: {
           fontFamily: {
-            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            serif: ['"Outfit"', 'system-ui', 'sans-serif'],
           },
           colors: {
             cream:   '#faf8f5',
@@ -50,7 +50,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" media="print" onload="this.media='all'"
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap">
 
   <link rel="stylesheet" href="/style.css">
 </head>
@@ -123,29 +123,38 @@
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
 
       <!-- Live Event Painting -->
-      <div class="service-card p-8">
-        <div class="icon-badge mb-6">
-          <i data-lucide="palette" class="w-7 h-7 text-copper"></i>
+      <a href="/services/live-event-painting/" class="service-card overflow-hidden p-0 flex flex-col group">
+        <div class="h-64 overflow-hidden">
+          <img src="/images/live-event-painting.png"
+               alt="Live event painting of a figure at a party"
+               class="w-full h-full object-cover"
+               style="object-position: center 15%;">
         </div>
-        <h3 class="font-serif text-xl font-bold mb-3 text-espresso">Live Event Painting</h3>
-        <p class="text-taupe text-sm leading-relaxed">
-          A large-format painting created live at your event — corporate, private, or public — as guests watch and mingle.
-        </p>
-      </div>
+        <div class="p-6 flex-1">
+          <h3 class="font-serif text-xl font-bold mb-3 text-espresso">Live Event Painting</h3>
+          <p class="text-taupe text-sm leading-relaxed">
+            A large-format painting created live at your event — corporate, private, or public — as guests watch and mingle.
+          </p>
+        </div>
+      </a>
 
       <!-- Wedding Art -->
-      <div class="service-card p-8">
-        <div class="icon-badge mb-6">
-          <i data-lucide="heart" class="w-7 h-7 text-copper"></i>
+      <a href="/services/wedding-art/" class="service-card overflow-hidden p-0 flex flex-col group">
+        <div class="h-64 overflow-hidden">
+          <img src="/images/wedding-art.png"
+               alt="Wedding painting of a couple walking through a landscape"
+               class="w-full h-full object-cover">
         </div>
-        <h3 class="font-serif text-xl font-bold mb-3 text-espresso">Wedding Art</h3>
-        <p class="text-taupe text-sm leading-relaxed">
-          A bespoke painting of your ceremony or reception, capturing the atmosphere and emotion of your day as it unfolds.
-        </p>
-      </div>
+        <div class="p-6 flex-1">
+          <h3 class="font-serif text-xl font-bold mb-3 text-espresso">Wedding Art</h3>
+          <p class="text-taupe text-sm leading-relaxed">
+            A bespoke painting of your ceremony or reception, capturing the atmosphere and emotion of your day as it unfolds.
+          </p>
+        </div>
+      </a>
 
       <!-- Quick Portraits -->
-      <div class="service-card overflow-hidden p-0 flex flex-col">
+      <a href="/services/quick-portraits/" class="service-card overflow-hidden p-0 flex flex-col group">
         <div class="h-64 overflow-hidden">
           <img src="/images/quick-portraits.jpg"
                alt="Guest holding her quick portrait painting"
@@ -157,29 +166,37 @@
             Speedy, expressive portraits of guests done live — a unique and memorable takeaway from your event.
           </p>
         </div>
-      </div>
+      </a>
 
       <!-- Face & Body Painting -->
-      <div class="service-card p-8">
-        <div class="icon-badge mb-6">
-          <i data-lucide="sparkles" class="w-7 h-7 text-copper"></i>
+      <a href="/services/face-body-painting/" class="service-card overflow-hidden p-0 flex flex-col group">
+        <div class="h-64 overflow-hidden">
+          <img src="/images/face-painting.png"
+               alt="Child with tiger face painting"
+               class="w-full h-full object-cover">
         </div>
-        <h3 class="font-serif text-xl font-bold mb-3 text-espresso">Face &amp; Body Painting</h3>
-        <p class="text-taupe text-sm leading-relaxed">
-          High-end, intricate face and body art for children's parties, festivals, and themed adult events.
-        </p>
-      </div>
+        <div class="p-6 flex-1">
+          <h3 class="font-serif text-xl font-bold mb-3 text-espresso">Face &amp; Body Painting</h3>
+          <p class="text-taupe text-sm leading-relaxed">
+            High-end, intricate face and body art for children's parties, festivals, and themed adult events.
+          </p>
+        </div>
+      </a>
 
       <!-- Art Events & Workshops -->
-      <div class="service-card p-8">
-        <div class="icon-badge mb-6">
-          <i data-lucide="brush" class="w-7 h-7 text-copper"></i>
+      <a href="/services/art-events-workshops/" class="service-card overflow-hidden p-0 flex flex-col group">
+        <div class="h-64 overflow-hidden">
+          <img src="/images/art-workshops.png"
+               alt="Artist painting at an outdoor art event"
+               class="w-full h-full object-cover">
         </div>
-        <h3 class="font-serif text-xl font-bold mb-3 text-espresso">Art Events &amp; Workshops</h3>
-        <p class="text-taupe text-sm leading-relaxed">
-          Interactive painting sessions and guided workshops that get your guests creating alongside a professional artist.
-        </p>
-      </div>
+        <div class="p-6 flex-1">
+          <h3 class="font-serif text-xl font-bold mb-3 text-espresso">Art Events &amp; Workshops</h3>
+          <p class="text-taupe text-sm leading-relaxed">
+            Interactive painting sessions and guided workshops that get your guests creating alongside a professional artist.
+          </p>
+        </div>
+      </a>
 
     </div>
   </div>
